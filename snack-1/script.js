@@ -1,4 +1,10 @@
 const names = ['Edoardo', 'Simone', 'Francesco'];
 
 // Stampa in console tutti i nomi
+
+for (let i = 0; i < names.length; i++) {
+    const name = names[i];
+    console.log(name);  
+    
+}
 // Risultato: 'Edoardo', 'Simone', 'Francesco'
