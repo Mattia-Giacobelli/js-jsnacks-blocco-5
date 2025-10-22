@@ -34,4 +34,10 @@ students.forEach((student) => {
     console.log(student);
   }
 });
+
+//Using find
+const student2 = students.find((student) => student.id === 2)
+console.log(student2);
+
+
 // Risultato: { id: 2, name: 'Mario Banfi', age: 34, class: '4A' } 
