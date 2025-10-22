@@ -13,4 +13,10 @@ for (let i = 0; i < people.length; i++) {
   
 }
 
+//Using forEach
+people.forEach((person) => {
+  console.log(person.name);
+  
+})
+
 // Risultato: 'Paolo', 'Giulia', 'Marco'
