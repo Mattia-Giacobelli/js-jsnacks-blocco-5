@@ -5,4 +5,12 @@ const people = [
 ];
 
 // Stampa in console tutti i nomi
+
+//Using for
+for (let i = 0; i < people.length; i++) {
+  const person = people[i].name;
+  console.log(person);
+  
+}
+
 // Risultato: 'Paolo', 'Giulia', 'Marco'
