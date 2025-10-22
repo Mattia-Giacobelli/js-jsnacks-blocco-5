@@ -24,6 +24,9 @@ nums.forEach((num) => {
 })
 console.log(evenNumsEach);
 
+//Using filter
+const evenNumsFilter = nums.filter((num) => num % 2 === 0)
+console.log(evenNumsFilter);
 
 
 // Risultato: [2, 8, 4, 12]
