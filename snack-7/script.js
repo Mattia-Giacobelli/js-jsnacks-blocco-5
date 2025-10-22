@@ -28,4 +28,10 @@ for (let i = 0; i < students.length; i++) {
   }
 }
 
+//Using forEach
+students.forEach((student) => {
+  if (student.id === 2) {
+    console.log(student);
+  }
+});
 // Risultato: { id: 2, name: 'Mario Banfi', age: 34, class: '4A' } 
