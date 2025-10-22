@@ -31,6 +31,14 @@ for (let i = 0; i < students.length; i++) {
   }
 }
 console.log(studentClass); 
-// Risult
+
+//Using forEach
+let studentClass2 = '';
+students.forEach((student) => {
+  if (student.name === 'Marco Lanci') {
+    studentClass2 = student.class;
+  }
+});
+console.log(studentClass2);
 
 // Risultato: '3C'
