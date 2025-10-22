@@ -19,7 +19,7 @@ const zucchineShort = [];
 
 for (let i = 0; i < zucchine.length; i++) {
   const zucchina = zucchine[i];
-  if (zucchina.length >= 15) {
+  if (zucchina.length > 15) {
     zucchineLong.push(zucchina);
   } else {
     zucchineShort.push(zucchina);
@@ -34,7 +34,7 @@ const zucchineLongEach = [];
 const zucchineShortEach = [];
 
 zucchine.forEach((zucchina) => {
-  if (zucchina.length >= 15) {
+  if (zucchina.length > 15) {
     zucchineLongEach.push(zucchina);
   } else {
     zucchineShortEach.push(zucchina);
@@ -43,3 +43,11 @@ zucchine.forEach((zucchina) => {
 
 console.log('Longer than 15cm:', zucchineLongEach);
 console.log('Shorter than 15cm:', zucchineShortEach);
+
+//Using filter
+const zucchineLongFilter = zucchine.filter((zucchina) => zucchina.length > 15)
+console.log('Longer than 15cm:', zucchineLongFilter);
+
+
+const zucchineShortFilter = zucchine.filter((zucchina) => zucchina.length < 15)
+console.log('Shorter than 15cm:', zucchineShortFilter);
