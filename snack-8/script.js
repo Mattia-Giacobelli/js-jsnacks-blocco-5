@@ -20,4 +20,17 @@ const students = [
 ];
 
 // Recupera la classe dello studente 'Marco Lanci'
+
+//Using for loop
+let studentClass = '';
+for (let i = 0; i < students.length; i++) {
+  student = students[i].name;
+  if (student === 'Marco Lanci') {
+    studentClass = students[i].class;
+    break;
+  }
+}
+console.log(studentClass); 
+// Risult
+
 // Risultato: '3C'
