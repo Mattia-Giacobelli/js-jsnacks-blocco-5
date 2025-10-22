@@ -20,4 +20,12 @@ const students = [
 ];
 
 // Recupera i dati dello studente con id 2
-// Risultato: { id: 2, name: 'Mario Banfi', age: 34, class: '4A' }
+
+//Using for
+for (let i = 0; i < students.length; i++) {
+  if (students[i].id === 2) {
+    console.log(students[i]);
+  }
+}
+
+// Risultato: { id: 2, name: 'Mario Banfi', age: 34, class: '4A' } 
