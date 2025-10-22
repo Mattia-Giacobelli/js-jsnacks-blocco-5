@@ -7,4 +7,6 @@ for (let i = 0; i < names.length; i++) {
     console.log(name);  
     
 }
+
+names.forEach((name) => console.log(name))
 // Risultato: 'Edoardo', 'Simone', 'Francesco'
