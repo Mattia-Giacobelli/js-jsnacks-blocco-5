@@ -33,12 +33,16 @@ for (let i = 0; i < students.length; i++) {
 console.log(studentClass); 
 
 //Using forEach
-let studentClass2 = '';
+let studentClassEach = '';
 students.forEach((student) => {
   if (student.name === 'Marco Lanci') {
-    studentClass2 = student.class;
+    studentClassEach = student.class;
   }
 });
-console.log(studentClass2);
+console.log(studentClassEach);
+
+//Using find
+const marco = students.find((student) => student.name === 'Marco Lanci');
+console.log(marco.class);
 
 // Risultato: '3C'
