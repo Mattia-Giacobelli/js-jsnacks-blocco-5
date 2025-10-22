@@ -24,5 +24,10 @@ posts.forEach((post) => {
 })
 console.log(authorsEach);
 
+//Using map
+const authorsMap = posts.map((post) => post.author);
+console.log(authorsMap);
+
+
 
 // Risultato: ['Marco', 'Luca', 'Fabrizio', 'Enrico']
