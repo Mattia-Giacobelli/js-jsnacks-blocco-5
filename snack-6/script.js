@@ -26,5 +26,20 @@ for (let i = 0; i < zucchine.length; i++) {
   }
 }
 
-console.log('Zucchine lunghe almeno 15cm:', zucchineLong);
-console.log('Zucchine più corte di 15cm:', zucchineShort);
+console.log('Longer than 15cm:', zucchineLong);
+console.log('Shorter than 15cm:', zucchineShort);
+
+//Using forEach
+const zucchineLongEach = [];
+const zucchineShortEach = [];
+
+zucchine.forEach((zucchina) => {
+  if (zucchina.length >= 15) {
+    zucchineLongEach.push(zucchina);
+  } else {
+    zucchineShortEach.push(zucchina);
+  }
+});
+
+console.log('Longer than 15cm:', zucchineLongEach);
+console.log('Shorter than 15cm:', zucchineShortEach);
