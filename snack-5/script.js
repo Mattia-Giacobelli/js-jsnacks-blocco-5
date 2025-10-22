@@ -14,5 +14,16 @@ for (let i = 0; i < nums.length; i++) {
 }
 console.log(evenNums);
 
+//Using forEach
+const evenNumsEach = []
+
+nums.forEach((num) => {
+    if (num % 2 === 0) {
+        evenNumsEach.push(num)
+    }
+})
+console.log(evenNumsEach);
+
+
 
 // Risultato: [2, 8, 4, 12]
